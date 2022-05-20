@@ -1,10 +1,14 @@
 package com.vilas.instagram.reels;
 
+import com.vilas.instagram.story.StoryDemo;
+
 public class ReelsDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		StoryDemo storyObj = new StoryDemo();
+		storyObj.storyMethod();
+		
 	}
 
 }
