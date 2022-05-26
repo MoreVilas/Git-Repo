@@ -15,4 +15,8 @@ public class Simplev2 {
 		obj.msg();
 	}
 
+	public String age;
+	public String height;
+	public String weight;
+
 }

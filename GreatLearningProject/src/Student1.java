@@ -12,5 +12,8 @@ class Student1{
 public static void main(String[] args) {
 	Student1 students1 = new Student1();
 	Student1 students2 = new Student1();
-	System.out.println("Sutdent1");
+	System.out.println("Sutdent1" + "rollno");
+    System.out.println("Student2" + "name");
+    
+   }
 }
