@@ -1,15 +1,14 @@
 
-public class Customer {
-String fullName;
-int age;
-	public static void main(String[] args) {
-		
-		Customer customer= new Customer();
-		customer.fullName="Name of the customer is chaitanya";
-		System.out.println(customer.fullName);
-	    customer.age=27;
-	    System.out.println(customer.age);
+class Customer {
+    private static void main(String args[]) {
+    	Customer customer=new Customer();
+        System.out.println("Name of the customer is Harshit");
+    }
 
-	}
+    private void Age() {
+
+        System.out.println("Age of the customer is 25 years");
+
+    }
 
 }
