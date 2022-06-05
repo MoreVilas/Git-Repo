@@ -1,20 +1,36 @@
 
-public class Employee {
+class Employee {
+
+  public String empName;
+public String empAddress;
+public int empId;
+
+Employee(){
+
+    this(10);
+
+    System.out.print(" hello");
+
+  }
+
+  Employee(int x){
+
+    System.out.print("hi");
+
+  }
+
+public void displayEmpData() {
+	// TODO Auto-generated method stub
 	
-	int empId;
-	
-	String empName;
-	
-	String empAddress;
-   
-	
-	public void displayEmpData()
-	{
-		System.out.println("Emplyee name is " + empName);
-		System.out.println("Emplyee id is " + empId);
-		System.out.println("Emplyee Address is " + empAddress);
-	}
-	
-		Employee employee1 = new Employee();
-	
+}
+
+}
+class MainA {
+
+  public static void main(String args[]) {
+
+      MainA employee = new MainA();
+
+    }
+
 }

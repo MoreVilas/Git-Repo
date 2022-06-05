@@ -6,8 +6,8 @@ public class DriverEmployee {
 		Employee employee1 = new Employee();
 		
 		employee1.empId = 123;
-		employee1.empName = "Vilas";
-		employee1.empAddress = "India";
+		employee1.empName = ("Vilas");
+		employee1.empAddress = ("India");
 		
 		employee1.displayEmpData();
         
