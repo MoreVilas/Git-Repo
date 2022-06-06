@@ -1,5 +1,4 @@
-
-class Main {
+public class Detach {
 
 public static void main (String[] args) {
 

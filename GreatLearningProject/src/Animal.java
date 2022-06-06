@@ -1,4 +1,4 @@
-class Animal{
+public class Animal{
        void move(){
 	      System.out.println("Animal can move");
 		  }
@@ -13,7 +13,7 @@ class Animal{
 	   System.out.println("Dogs can walk and run");
 	   }
 
-	 public static void main(String args[]){
+	 public static void Main(String args[]){
 	   Animal a = new Animal();
 	   Animal b = new Dog();//upcasting
 	   a.eat();
