@@ -16,14 +16,12 @@ class Second extends First {
 
     }
 
-}    
+    
 
-public class ImplementationInformation {
-
-    public static void main(String args[]) {
+public static void main(String args[]) {
 
         Second obj = new Second();
-
+        
         obj.i=1;
 
         obj.j=2;   
