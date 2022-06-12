@@ -7,6 +7,8 @@ public class MultipleCatchDemo {
 	  try {                   //try block
 		  int arr[] = new int[10];  //Size of array
 		  arr[0] = 20/0;            //divide by zero is illegal operation
+		  //String a = null;
+		  //a.charAt(0);
 		  System.out.println("try block ends here");
 		  }
 	  catch (ArithmeticException ae) {       // first catch block
