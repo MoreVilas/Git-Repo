@@ -20,4 +20,9 @@ public class WriteHelper {
 			   
 		   }
 	   }
+
+public void readFile() {
+	// TODO Auto-generated method stub
+	
+}
 	   }
