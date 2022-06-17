@@ -1,6 +1,7 @@
-package VilasMoreOOpsAssignmentSolution;
+package Week4;
 
 public class BubbleSort {
+
 	static void performBubbleSort(int[]arr) {
 		int size = arr.length;
 		int temp = 0;
