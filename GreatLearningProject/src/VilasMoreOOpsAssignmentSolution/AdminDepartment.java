@@ -1,23 +1,13 @@
 package VilasMoreOOpsAssignmentSolution;
 
 public class AdminDepartment extends SuperDepartment {
-	public void departmentName() {
-		System.out.println("Admin Department");
-	}
-	public void getTodaysWork() {
-		System.out.println("Complete your documents Submission");
-	}
-	public void getWorkDeadline() {
-		System.out.println("Complete by EOD");
-		}
-	class main{
-		public main(String []args) {
-			AdminDepartment obj = new AdminDepartment();
-		    obj.departmentName();
-		    obj.getTodaysWork();
-		    obj.getWorkDeadline();
+	
+public void display() {
 		
-			}
-	}
-}
+		System.out.println(departmentName= "Welcome to Admin Department");
+		System.out.println(getTodaysWork= "Complete your documents Submission");
+		System.out.println(getWorkDeadline= "Complete by EOD");
+		System.out.println(isTodayAHoliday= "Today is not a Holiday");
+		}
 
+}

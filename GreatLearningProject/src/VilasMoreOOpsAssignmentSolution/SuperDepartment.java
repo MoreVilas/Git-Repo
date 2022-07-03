@@ -1,28 +1,20 @@
 package VilasMoreOOpsAssignmentSolution;
 
 public class SuperDepartment {
-   
-	public void  departmentName(){
-		System.out.println("Super Department");
-		}
-	public void getTodaysWork() {
-		System.out.println("No Work as of now");
+	String departmentName;
+	String getTodaysWork;
+	String getWorkDeadline;
+	String isTodayAHoliday;
+	String doActivity;
+	String getTechStackInformation;
+	
+	
+	public void display() {
+		
+		System.out.println(departmentName= "Welcome to Super Department");
+		System.out.println(getTodaysWork= "No work as of now");
+		System.out.println(getWorkDeadline= "Nil");
+		System.out.println(isTodayAHoliday= "Today is not a holiday");
 	}
-	public void getWorkDeadline() {
-		System.out.println("Nil");
-		}
-	public void isTodayAHoliday() {
-		System.out.println("Today is not a holiday");
-		}
-	class main{
-		public static void main(String [] args) {
-			SuperDepartment S = new SuperDepartment();
-			SuperDeartment();
-			}
 
-		private static void SuperDeartment() {
-			// TODO Auto-generated method stub
-			
-		} 
-}
 }
