@@ -1,6 +1,6 @@
-public class SuperDepartment1 {
+public class SpecDepartment1 {
 		   
-		public SuperDepartment1() {
+		public SpecDepartment1() {
 			String departmentName;
 			String getTodaysWork;
 			String getWorkDeadline;
@@ -20,7 +20,7 @@ public class SuperDepartment1 {
 			}
 		class main {
 			public static void main(String [] args) {
-				SuperDepartment1 obj = new SuperDepartment1();
+				SpecDepartment1 obj = new SpecDepartment1();
 				obj.departmentName();
 			    obj.getTodaysWork();
 			    obj.getWorkDeadline();
@@ -28,7 +28,7 @@ public class SuperDepartment1 {
 	            
 				}
 		}
-		public void SuperDepartment() {
+		public void SpecDepartment() {
 			// TODO Auto-generated method stub
 			
 		}
