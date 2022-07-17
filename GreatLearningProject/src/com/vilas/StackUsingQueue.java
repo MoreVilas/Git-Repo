@@ -22,15 +22,16 @@ public class StackUsingQueue {
 		
 		else {
 			//empty the stack in temporary queue i.e. dequue
-			for(int i=0; i<stack.size(); i++)
+			int size = stack.size();
+			for(int i=0; i<size(); i++)
 				tempQueue.add(stack.remove());
 			//add the element in the stack
 			
 			stack.add(data);
 			//now add the elements from temp queue to stack i.e.enqueue
 			
-			for(int i=0; i<stack.size(); i++)
-				tempQueue.add(stack.remove());
+			for(int i=0; i<size(); i++)//2
+				tempQueue.add(tempQueue.remove());//1
 		}
 			
 		}
@@ -59,5 +60,16 @@ public class StackUsingQueue {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[]args) {
+		StackUsingQueue s1 = new StackUsingQueue();
+		System.out.println(s1.isEmpty());
+		//s1.pop();
+		s1.push(1);
+		s1.push(2);
+		s1.push(3);
+		s1.push(4);
+		System.out.println(s1.isEmpty());
+		s1.display();
 	}
 }
