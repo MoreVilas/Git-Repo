@@ -1,17 +1,16 @@
-package Service;
+package Entity_Details;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class Test {
-	
+public class Student {
+
 	public static void main(String[]args) {
-		//create session factory
-		System.out.println("Connecting to database");
-		SessionFactory factory= new Configuration()
+		SessionFactory factory = new Configuration()
 				.configure("hibernate.cfg.xml")
+				.addClass(Student.class)
 				.buildSessionFactory();
-		System.out.println("created");
+		
 		
 	}
 
