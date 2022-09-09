@@ -113,7 +113,7 @@ public class NumberToWordExample {
 	numberToWords("355".toCharArray());  
 	numberToWords("3".toCharArray());  
 	numberToWords("0".toCharArray());  
-	numberToWords("9876".toCharArray());  
+	numberToWords("986".toCharArray());  
 	numberToWords("245798".toCharArray());  
 	//passing empty string   
 	numberToWords("".toCharArray());  
