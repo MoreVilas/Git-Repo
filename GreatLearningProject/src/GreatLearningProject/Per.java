@@ -6,34 +6,27 @@ public class Per {
 private int age;
 	
 	public Per(int initialAge ) {
-		if(initialAge <0){
-			System.out.println("Age is not valid, setting age to 0");
-			this.age=0;
-			// Add some more code to run some checks on initialAge
-		}
-		else {
-			this.age = initialAge;
-		}
+		 if (initialAge > 0) {
+             age = initialAge;
+         } else {
+             System.out.println("Age is not valid, setting age to 0.");
+             age = 0;
+         }
 		
 	}
 	
 	public void amIOld() {
 		
-		String result = "";
-		if(age >=18) {
-			result = "You are old.";
-		}
-		else if(age >=13) {
-			result ="You are a teenager.";
-		}
-		else {
-			result = "Your are young.";
+		if(age <13) 
+			System.out.println("You are young.");
+		
+		else if(age <18) 
+			System.out.println("You are a teenager.");
+		
+		else 
+			System.out.println("Your are old.");
 	}
-		//Write code determining if this person's age is old and print the
-	//	correct statement:
-		System.out.println(result);
-		/*Insert correct print statement here */
-	}
+	
 	
 	public void yearPasses() {
 		this.age++;
