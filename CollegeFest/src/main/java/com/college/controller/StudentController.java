@@ -23,23 +23,23 @@ public class StudentController {
 	public String listBooks(Model theModel) {
 		System.out.println("request Recieved");
 		List<Student> theStudents = (studentService).findAll();
-		theModel.addAttribute("Students", theStudents);
+		theModel.addAttribute("Student", theStudents);
 
-		return "list-student";
+		return "studentlist";
 	}
 
-	@RequestMapping("/showFormForAdd")
+	@RequestMapping("/add")
 	public String showFormForAdd(Model theModel) {
 		Student theStudent = new Student();
-		theModel.addAttribute("Student", theStudent);
-		return "Student-form";
+		theModel.addAttribute("student", theStudent);
+		return "studentform";
 	}
 
 	@RequestMapping("/showFormForUpdate")
 	public String showFormFormForUpdate(@RequestParam("studentId") int theId, Model theModel) {
 		Student theStudent = studentService.findById(theId);
-		theModel.addAttribute("Student", theStudent);
-		return "Student-form";
+		theModel.addAttribute("student", theStudent);
+		return "studentform";
 	}
 
 	@PostMapping("/save")
@@ -48,14 +48,15 @@ public class StudentController {
 		System.out.println(id);
 		Student theStudent;
 		if (id != 0) {
-			theStudent = studentService(id);
+			theStudent = studentService.findById(id);
 			theStudent.setName(name);
 			theStudent.setDepartment(department);
 			theStudent.setCountry(country);
 		} else {
-			theStudent = new Student(id, name, department, country);
-			(studentService).save(theStudent);
+			theStudent = new Student(name, department, country);
+			
 		}
+		studentService.save(theStudent);
 		return "redirect:/student/list";
 	}
 

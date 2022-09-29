@@ -17,9 +17,8 @@ public class Student {
 	public Student() {
 		super();
 	}
-	public Student(int id, String name, String department, String country) {
+	public Student(String name, String department, String country) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.country = country;

@@ -14,11 +14,7 @@ import com.college.entity.Student;
 
 @Repository
 public class StudentServiceImpl implements StudentService {
-	private SessionFactory sessionFactory;
 	
-	//create session
-	private Session session ;
-
 	@Autowired
 	public StudentServiceImpl(SessionFactory sessionFactory) {
 		this.sessionFactory=sessionFactory;
@@ -29,6 +25,8 @@ public class StudentServiceImpl implements StudentService {
 		}
 		
 	}
+	private SessionFactory sessionFactory;
+	private Session session;
 
 	@Transactional
 	public List<Student> findAll() {

@@ -5,28 +5,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Sample Table</title>
 </head>
 <body>
 	<%-- <p>${student }</p> --%>
 	<div>
-		<a href="/CollegeFest/student/add">Add Student</a>
+		<a href="add">Add student</a>
 
 	</div>
 	<table class="table">
 		<tr>
 			<th>Name</th>
-			<th>Country</th>
 			<th>Department</th>
+			<th>Country</th>
 			<th>Action</th>
 		</tr>
-		<c:forEach items="${student }" var="student">
+		<c:forEach items="${Student}" var="student">
 			<tr>
 				<td>${student.name }</td>
-				<td>${student.country }</td>
 				<td>${student.department }</td>
-				<td><a href="/Collegefest/student/edit/${student.id }">Update</a>
-					<a href="/Collegefest/student/edit/${student.id }">Delete</a>
+				<td>${student.country }</td>
+				
+				<td><a href="/CollegeFest/student/showFormForUpdate/?studentId=${student.id }">Update</a>
+					<a href="/CollegeFest/student/delete/?studentId=${student.id }">Delete</a>
 		</c:forEach>
 	</table>
 </body>

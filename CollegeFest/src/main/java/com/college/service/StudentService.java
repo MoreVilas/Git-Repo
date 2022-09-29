@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.college.entity.Student;
 
-
+@Service
 public interface StudentService {
 	public List<Student>findAll();
 	 public void save(Student theStudent);

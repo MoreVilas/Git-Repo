@@ -14,25 +14,37 @@
 <body>
 	<div class="container">
 		<h3>student Record</h3>
-		<form action="/student/save" method="POST">
-			<input type="hidden" name="id" value="${student.id }" />
-			<div class="mb-3">
-				<label for="exampleInputEmail1" class="from-label">Name</label> <input
-					type="text" name="name" value="${student.name }"
-					class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp">
+		<form action="/CollegeFest/student/save" method="POST">
+			<input type="text" name="id" value="${student.id }" />
+			<div class="form-inline">
+				<input type="text" name="name" value="${student.name}"
+					class="form-control mb-4 col-4" placeholder="Name">
+
+
+
 			</div>
-			<div class="mb-3">
-				<label for="exampleInputPassword1" class="from-label">Country</label>
-				<input type="text" class="form-control" id="exampleInputPassword1"
-					name="country" value="${student.country }">
+
+			
+
+			<div class="form-inline">
+
+				<input type="text" name="department" value="${student.department}"
+					class="form-control mb-4 col-4" placeholder="Department">
+
+
+
 			</div>
-			<div class="mb-3">
-				<label for="exampleInputPassword1" class="from-label">Department</label>
-				<input type="text" name="department" value="${student.department }"
-					class="form-control" id="exampleInputPassword1" name="department">
+			<div class="form-inline">
+
+				<input type="text" name="country" value="${student.country}"
+					class="form-control mb-4 col-4" placeholder="Country">
+
+
+
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+
+			<button type="submit" class="btn btn-info col-2">Save</button>
+
 		</form>
 	</div>
 </body>
